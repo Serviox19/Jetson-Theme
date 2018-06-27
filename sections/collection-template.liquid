@@ -2,7 +2,7 @@
   {% assign feature_image = true %}
   {% if collection.image %}
     {% assign collection_image = collection.image %}
-  {% elsif section.settings.image != nil %}
+  {% else if section.settings.image != nil %}
     {% assign collection_image = section.settings.image %}
   {% else %}
     {% assign collection_image = collection.products.first.featured_image %}
@@ -62,7 +62,7 @@
         <div class="feature_divider"></div>
       </div>
     {% endif %}
-  
+
 
 
 

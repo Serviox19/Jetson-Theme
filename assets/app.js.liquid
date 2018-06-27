@@ -214,10 +214,10 @@ var header = {
     }
 
     $('body').on('mouseover', '.sub-menu', function() {
-      $(this).attr('aria-expanded', true); 
+      $(this).attr('aria-expanded', true);
     });
-    $('body').on('mouseout', '.sub-menu', function() { 
-     $(this).attr('aria-expanded', false); 
+    $('body').on('mouseout', '.sub-menu', function() {
+     $(this).attr('aria-expanded', false);
     });
   },
   unload: function($target){
@@ -325,7 +325,7 @@ var homepageVideo = {
       } else {
         var autoloop = 0;
       }
-      var html = '<iframe src="//player.vimeo.com/video/'+videoDetails.id+'?loop='+autoloop+'&amp;title=0&amp;byline=0&amp;portrait=0&amp;color=3d96d2&autoplay=1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe>';
+      var html = '<iframe src="//player.vimeo.com/video/'+videoDetails.id+'?loop='+autoloop+'&amp;title=0&amp;byline=0&amp;portrait=0&amp;color=3d96d2?rel=0&amp;autoplay=1" allow="autoplay" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen ></iframe>';
     }
     else if(videoDetails.provider === 'html5') {
       if (settings.autoloop){
@@ -1746,7 +1746,7 @@ var instagram = {
 
               if(!thisMedia.images.thumbnail.url.indexOf("null") > -1) {
                 var url = thisMedia.images.thumbnail.url;
-                url = url.replace(/\/s150x150\//,"/s320x320/");                
+                url = url.replace(/\/s150x150\//,"/s320x320/");
 
                 item = '<img class="il-photo__img" src="'+url+'" data-filter="'+thisMedia.filter+'" />';
                 item = '<a href="'+thisMedia.link+'" target="_blank">'+item+'</a>';

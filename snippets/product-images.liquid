@@ -24,7 +24,7 @@
         {% else %}
           <a href="{{ image | product_img_url: '2048x' }}" class="fancybox" data-fancybox-group="{{ product.id }}" title="{{ image.alt | escape }}">
             <div class="image__container" style="max-width: {{ image.width }}px">
-              <img  src="{{ image | product_img_url: '100x' }}"
+              <img src="{{ image | product_img_url: '100x' }}"
                     data-src="{{ image | product_img_url: '2048x' }}"
                     alt="{{ image.alt | escape }}"
                     class="lazyload lazyload--fade-in cloudzoom {% if featured_image.id == image.id %}featured_image{% endif %}"

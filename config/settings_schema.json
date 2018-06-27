@@ -4,8 +4,8 @@
     "theme_name": "Parallax",
     "theme_author": "Out of the Sandbox",
     "theme_version": "3.3.1",
-    "theme_documentation_url": "https:\/\/help.outofthesandbox.com/",
-    "theme_support_url": "https:\/\/help.outofthesandbox.com\/hc\/en-us\/requests/new"
+    "theme_documentation_url": "https:\/\/help.outofthesandbox.com\/",
+    "theme_support_url": "https:\/\/help.outofthesandbox.com\/hc\/en-us\/requests\/new"
   },
   {
     "name": "Colors",
@@ -314,8 +314,8 @@
         "id": "custom_footer",
         "label": "Footer background image",
         "info": "1800 x 600px recommended"
-        },
-       {
+      },
+      {
         "type": "select",
         "id": "footer_repeat_bg",
         "label": "Repeat footer background",
@@ -388,20 +388,18 @@
         "type": "header",
         "content": "Password page"
       },
-
       {
         "type": "image_picker",
         "id": "custom_logo",
         "label": "Logo",
         "info": "720px wide recommended"
       },
-            {
+      {
         "type": "color",
         "id": "password_page_text_color",
         "label": "Password page text",
         "default": "#ffffff"
       },
-
       {
         "type": "color",
         "id": "password_page_background_color",
@@ -434,7 +432,7 @@
         "id": "logo_font",
         "label": "Font",
         "options": [
-               {
+          {
             "value": "Arial, 'Helvetica Neue', Helvetica, sans-serif",
             "label": "Arial",
             "group": "Sans-serif"
@@ -479,7 +477,7 @@
             "label": "Advent Pro",
             "group": "Sans-serif | Google Fonts"
           },
-           {
+          {
             "value": "Google_Asap",
             "label": "Asap",
             "group": "Sans-serif | Google Fonts"
@@ -594,7 +592,6 @@
             "label": "Unica One",
             "group": "Sans-serif | Google Fonts"
           },
-
           {
             "value": "'Big Caslon', 'Book Antiqua', 'Palatino Linotype', Georgia, serif",
             "label": "Big Caslon",
@@ -710,7 +707,6 @@
             "label": "Vollkorn",
             "group": "Serif | Google Fonts"
           },
-
           {
             "value": "Google_Amatic+SC",
             "label": "Amatic SC",
@@ -756,7 +752,7 @@
             "label": "Parisienne",
             "group": "Handwriting | Google Fonts"
           },
-         {
+          {
             "value": "Google_Patrick+Hand+SC",
             "label": "Patrick Hand SC",
             "group": "Handwriting | Google Fonts"
@@ -776,7 +772,6 @@
             "label": "Sue Ellen Francisco",
             "group": "Handwriting | Google Fonts"
           },
-
           {
             "value": "'Courier New', Courier, monospace",
             "label": "Courier New",
@@ -847,7 +842,7 @@
         "id": "headline_font",
         "label": "Font",
         "options": [
-           {
+          {
             "value": "Arial, 'Helvetica Neue', Helvetica, sans-serif",
             "label": "Arial",
             "group": "Sans-serif"
@@ -892,7 +887,7 @@
             "label": "Advent Pro",
             "group": "Sans-serif | Google Fonts"
           },
-           {
+          {
             "value": "Google_Asap",
             "label": "Asap",
             "group": "Sans-serif | Google Fonts"
@@ -1007,7 +1002,6 @@
             "label": "Unica One",
             "group": "Sans-serif | Google Fonts"
           },
-
           {
             "value": "'Big Caslon', 'Book Antiqua', 'Palatino Linotype', Georgia, serif",
             "label": "Big Caslon",
@@ -1123,7 +1117,6 @@
             "label": "Vollkorn",
             "group": "Serif | Google Fonts"
           },
-
           {
             "value": "Google_Amatic+SC",
             "label": "Amatic SC",
@@ -1169,7 +1162,7 @@
             "label": "Parisienne",
             "group": "Handwriting | Google Fonts"
           },
-         {
+          {
             "value": "Google_Patrick+Hand+SC",
             "label": "Patrick Hand SC",
             "group": "Handwriting | Google Fonts"
@@ -1189,7 +1182,6 @@
             "label": "Sue Ellen Francisco",
             "group": "Handwriting | Google Fonts"
           },
-
           {
             "value": "'Courier New', Courier, monospace",
             "label": "Courier New",
@@ -1358,7 +1350,7 @@
             "label": "Advent Pro",
             "group": "Sans-serif | Google Fonts"
           },
-           {
+          {
             "value": "Google_Asap",
             "label": "Asap",
             "group": "Sans-serif | Google Fonts"
@@ -1473,7 +1465,6 @@
             "label": "Unica One",
             "group": "Sans-serif | Google Fonts"
           },
-
           {
             "value": "'Big Caslon', 'Book Antiqua', 'Palatino Linotype', Georgia, serif",
             "label": "Big Caslon",
@@ -1589,7 +1580,6 @@
             "label": "Vollkorn",
             "group": "Serif | Google Fonts"
           },
-
           {
             "value": "Google_Amatic+SC",
             "label": "Amatic SC",
@@ -1635,7 +1625,7 @@
             "label": "Parisienne",
             "group": "Handwriting | Google Fonts"
           },
-         {
+          {
             "value": "Google_Patrick+Hand+SC",
             "label": "Patrick Hand SC",
             "group": "Handwriting | Google Fonts"
@@ -1655,7 +1645,6 @@
             "label": "Sue Ellen Francisco",
             "group": "Handwriting | Google Fonts"
           },
-
           {
             "value": "'Courier New', Courier, monospace",
             "label": "Courier New",
@@ -1735,7 +1724,7 @@
         "id": "regular_font",
         "label": "Font",
         "options": [
-         {
+          {
             "value": "Arial, 'Helvetica Neue', Helvetica, sans-serif",
             "label": "Arial",
             "group": "Sans-serif"
@@ -1780,7 +1769,7 @@
             "label": "Advent Pro",
             "group": "Sans-serif | Google Fonts"
           },
-           {
+          {
             "value": "Google_Asap",
             "label": "Asap",
             "group": "Sans-serif | Google Fonts"
@@ -1895,7 +1884,6 @@
             "label": "Unica One",
             "group": "Sans-serif | Google Fonts"
           },
-
           {
             "value": "'Big Caslon', 'Book Antiqua', 'Palatino Linotype', Georgia, serif",
             "label": "Big Caslon",
@@ -2011,7 +1999,6 @@
             "label": "Vollkorn",
             "group": "Serif | Google Fonts"
           },
-
           {
             "value": "Google_Amatic+SC",
             "label": "Amatic SC",
@@ -2057,7 +2044,7 @@
             "label": "Parisienne",
             "group": "Handwriting | Google Fonts"
           },
-         {
+          {
             "value": "Google_Patrick+Hand+SC",
             "label": "Patrick Hand SC",
             "group": "Handwriting | Google Fonts"
@@ -2077,7 +2064,6 @@
             "label": "Sue Ellen Francisco",
             "group": "Handwriting | Google Fonts"
           },
-
           {
             "value": "'Courier New', Courier, monospace",
             "label": "Courier New",
@@ -2290,7 +2276,7 @@
             "label": "Advent Pro",
             "group": "Sans-serif | Google Fonts"
           },
-           {
+          {
             "value": "Google_Asap",
             "label": "Asap",
             "group": "Sans-serif | Google Fonts"
@@ -2405,7 +2391,6 @@
             "label": "Unica One",
             "group": "Sans-serif | Google Fonts"
           },
-
           {
             "value": "'Big Caslon', 'Book Antiqua', 'Palatino Linotype', Georgia, serif",
             "label": "Big Caslon",
@@ -2521,7 +2506,6 @@
             "label": "Vollkorn",
             "group": "Serif | Google Fonts"
           },
-
           {
             "value": "Google_Amatic+SC",
             "label": "Amatic SC",
@@ -2567,7 +2551,7 @@
             "label": "Parisienne",
             "group": "Handwriting | Google Fonts"
           },
-         {
+          {
             "value": "Google_Patrick+Hand+SC",
             "label": "Patrick Hand SC",
             "group": "Handwriting | Google Fonts"
@@ -2587,7 +2571,6 @@
             "label": "Sue Ellen Francisco",
             "group": "Handwriting | Google Fonts"
           },
-
           {
             "value": "'Courier New', Courier, monospace",
             "label": "Courier New",
@@ -3015,7 +2998,7 @@
         "id": "display_view_cart",
         "label": "Show \"view cart\" button",
         "default": true
-      },      
+      },
       {
         "type": "checkbox",
         "id": "display_special_instructions",
@@ -3030,7 +3013,7 @@
         "type": "richtext",
         "id": "tos_richtext",
         "label": "Agree to terms text",
-        "default": "<p>I Agree with the Terms & Conditions</p>"
+        "default": "<p>I Agree with the Terms & Conditions<\/p>"
       },
       {
         "type": "header",
@@ -3053,7 +3036,6 @@
       }
     ]
   },
-
   {
     "name": "Popup",
     "settings": [

@@ -32,24 +32,24 @@
         data-video-ogv="{{ section.settings.ogv }}"
         >
         <div class="hsContainer" data-play-video>
-          <img  alt="{{ section.settings.image.alt }}"
-                {% if section.settings.image != nil %}
-                  src="{{ section.settings.image | img_url: '100x' }}"
-                  data-src="{{ section.settings.image | img_url: '2048x' }}"
-                  class="lazyload lazyload--fade-in hsContainer__image"
-                  sizes="100vw"
-                  srcset="  {{ section.settings.image | img_url: '2048x' }} 2048w,
-                            {{ section.settings.image | img_url: '1600x' }} 1600w,
-                            {{ section.settings.image | img_url: '1200x' }} 1200w,
-                            {{ section.settings.image | img_url: '1000x' }} 1000w,
-                            {{ section.settings.image | img_url: '800x' }} 800w,
-                            {{ section.settings.image | img_url: '600x' }} 600w,
-                            {{ section.settings.image | img_url: '400x' }} 400w"
-                {% else %}
-                  src="{{ 'placeholder.svg' | asset_url }}"
-                  class="hsContainer__image"
-                {% endif %}
-                 />
+          <img alt="{{ section.settings.image.alt }}"
+            {% if section.settings.image != nil %}
+              src="{{ section.settings.image | img_url: '100x' }}"
+              data-src="{{ section.settings.image | img_url: '2048x' }}"
+              class="lazyload lazyload--fade-in hsContainer__image"
+              sizes="100vw"
+              srcset="  {{ section.settings.image | img_url: '2048x' }} 2048w,
+                        {{ section.settings.image | img_url: '1600x' }} 1600w,
+                        {{ section.settings.image | img_url: '1200x' }} 1200w,
+                        {{ section.settings.image | img_url: '1000x' }} 1000w,
+                        {{ section.settings.image | img_url: '800x' }} 800w,
+                        {{ section.settings.image | img_url: '600x' }} 600w,
+                        {{ section.settings.image | img_url: '400x' }} 400w"
+            {% else %}
+              src="{{ 'placeholder.svg' | asset_url }}"
+              class="hsContainer__image"
+            {% endif %}
+          />
           <div class="hsContent caption js-caption">
             <div class="container">
               <div class="columns {% if section.settings.text_position == 'left' %} eight offset-by-one {% elsif section.settings.text_position == 'right' %} eight offset-by-eight {% else %} twelve offset-by-two {% endif %} align_{{ section.settings.text_alignment }}">

@@ -10,7 +10,7 @@
     "404": {
       "title": "Page Not Found",
       "subtext": "We're sorry, but the page you requested could not be found.",
-      "continue_shopping_html": "Try searching or <a href=\"/collections/all\">continue shopping &rarr;</a>"
+      "continue_shopping_html": "Try searching or <a href=\"\/collections\/all\">continue shopping &rarr;<\/a>"
     },
     "password_page": {
       "opening_soon": "Opening Soon",
@@ -24,11 +24,11 @@
       "signup_form_success": "We will send you an email right before we open!",
       "admin_link_html": "Are you the store owner? <a href=\"\/admin\" class=\"text-link\">Log in here<\/a>",
       "password_link": "Enter using password",
-      "powered_by_shopify_html": "This shop will be powered by <a href=\"https:\/\/www.shopify.com/?ref=out-of-the-sandbox\" target=\"_blank\">Shopify<\/a>"
+      "powered_by_shopify_html": "This shop will be powered by <a href=\"https:\/\/www.shopify.com\/?ref=out-of-the-sandbox\" target=\"_blank\">Shopify<\/a>"
     },
     "forms": {
       "post_error": "Not all the fields have been filled out correctly",
-      "post_field_error_html": "The <strong>{{ field }}</strong> {{ error }}"
+      "post_field_error_html": "The <strong>{{ field }}<\/strong> {{ error }}"
     },
     "newsletter_form": {
       "title": "News & Updates",
@@ -85,7 +85,7 @@
       "next_article_html": "Next",
       "tags": "Tags",
       "author": "Author",
-      "comment_meta_html": "<strong>{{ author }}</strong> on <strong><time datetime=\"{{ date }}\">{{ date }}</time></strong>"
+      "comment_meta_html": "<strong>{{ author }}<\/strong> on <strong><time datetime=\"{{ date }}\">{{ date }}<\/time><\/strong>"
     },
     "counts": {
       "comments_with_count": {
@@ -223,7 +223,7 @@
       "city": "City",
       "country": "Country",
       "province": "Province",
-      "zip": "Postal/Zip Code",
+      "zip": "Postal\/Zip Code",
       "phone": "Phone",
       "set_default": "Set as default address",
       "add": "Add Address",
@@ -340,7 +340,7 @@
       "total": "Total",
       "item": "Item",
       "uploaded_file": "uploaded file",
-      "continue_browsing_html": "There are no items in your cart. <a href=\"/collections/all\">Continue Shopping &rarr;</a>",
+      "continue_browsing_html": "There are no items in your cart. <a href=\"\/collections\/all\">Continue Shopping &rarr;<\/a>",
       "continue_shopping_link_html": "Continue Shopping &rarr;",
       "excluding_tax_shipping": "Excluding tax & shipping",
       "orders_processed_in_currency_html": "Orders will be processed in {{ currency }}.",
@@ -355,7 +355,7 @@
       "estimated_shipping": "estimated shipping",
       "country": "Country",
       "province": "Province",
-      "zip_code": "Zip/Postal Code",
+      "zip_code": "Zip\/Postal Code",
       "heading": "Shipping rates calculator",
       "submit_button_label": "Calculate shipping rates",
       "submit_button_label_disabled": "Calculating...",
@@ -378,7 +378,7 @@
       "pick_a_currency": "Pick a currency",
       "social": "Follow",
       "close_window": "Close",
-      "designer_credits_html": "Designed by <a href=\"http://outofthesandbox.com/\" target=\"_blank\" title=\"Parallax Shopify Theme by Out of the Sandbox\">Out of the Sandbox</a>."
+      "designer_credits_html": "Designed by <a href=\"http:\/\/outofthesandbox.com\/\" target=\"_blank\" title=\"Parallax Shopify Theme by Out of the Sandbox\">Out of the Sandbox<\/a>."
     },
     "social_sharing": {
       "title": "Share",

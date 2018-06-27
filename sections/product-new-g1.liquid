@@ -44,17 +44,17 @@
       <div class="{% if sidebar %}five{% else %}seven{% endif %} columns {% if section.settings.product_images_position == 'left' %}omega{% else %}alpha{% endif %} center">
 
         <div class="clearfix breadcrumb">
-      {% comment %}<div class="nav_arrows">
-        {% if collection.previous_product %}
-          <a href="{{ collection.previous_product }}" title="{{ 'products.general.previous_product_html' | t }}" class="ss-icon prev"><span class="icon-circle-left"></span></a>
-        {% endif %}
+          {% comment %}<div class="nav_arrows">
+            {% if collection.previous_product %}
+              <a href="{{ collection.previous_product }}" title="{{ 'products.general.previous_product_html' | t }}" class="ss-icon prev"><span class="icon-circle-left"></span></a>
+            {% endif %}
 
-        {% if collection.next_product %}
-          <a href="{{collection.next_product}}" title="{{ 'products.general.next_product_html' | t }}" class="ss-icon next"><span class="icon-circle-right"></span></a>
-        {% endif %}
-      </div>{% endcomment %}
-      {% include "product-breadcrumb" %}
-    </div>
+            {% if collection.next_product %}
+              <a href="{{collection.next_product}}" title="{{ 'products.general.next_product_html' | t }}" class="ss-icon next"><span class="icon-circle-right"></span></a>
+            {% endif %}
+          </div>{% endcomment %}
+          {% include "product-breadcrumb" %}
+        </div>
 
 
 
@@ -135,46 +135,6 @@
         {% if section.settings.display_collections or section.settings.display_tags or section.settings.display_type %}
          <hr />
         {% endif %}
-
-        <div class="meta">
-          {% if section.settings.display_social_buttons %}
-            <share-button></share-button>
-          {% endif %}
-
-          {% if section.settings.display_collections %}
-            <p>
-              <span class="label">{{ 'products.product.collections' | t }}:</span>
-              <span>
-               {% for col in product.collections %}
-                 <a href="{{ col.url }}" title="{{ col.title }}">{{ col.title }}</a>{% unless forloop.last %},{% endunless %}
-               {% endfor %}
-             </span>
-           </p>
-          {% endif %}
-
-          {% if section.settings.display_tags %}
-             <p>
-               {% for tag in product.tags %}
-                 {% if forloop.first %}
-                   <span class="label">{{ 'products.product.tags' | t }}:</span>
-                 {% endif %}
-
-                 {% unless tag contains 'meta-' %}
-                   <span>
-                     <a href="/collections/{% if collection %}{{ collection.handle }}{% else %}all{% endif %}/{{ tag | handle }}" title="{{ 'products.product.products_tagged' | t: tag: tag }}">{{ tag }}</a>{% unless forloop.last %},{% endunless %}
-                   </span>
-                 {% endunless %}
-               {% endfor %}
-             </p>
-          {% endif %}
-
-         {% if section.settings.display_type %}
-            <p>
-              <span class="label">{{ 'products.product.product_types' | t }}:</span>
-              <span>{{ product.type | link_to_type }}</span>
-            </p>
-         {% endif %}
-        </div>
       </div>
 
       {% if section.settings.product_images_position == 'right' %}
@@ -197,70 +157,101 @@
 
 
 
-
+      {% comment %} Lower Half of page {% endcomment %}
     <div class="global-wrapper product-extras">
-      <div class="container main content main-wrapper">
-        {% if product.metafields["global"]["Layout"] == "layout-1" %}
-        <div class="row {{ product.metafields["global"]["Layout"] }}">
-    		{% if product.metafields["global"]["Lifestyle-Image-1"] %}
-              <div class="sixteen columns gallery-images">
-                  <img src="{{ product.metafields["global"]["Lifestyle-Image-1"] }}" alt="{{ product.metafields["global"]["Lifestyle-Image-1-Alt"] }}"/>
-              </div>
-     		{% endif %}
-            {% if product.metafields["global"]["Lifestyle-Image-2"] %}
-              <div class="one-half column alpha gallery-images">
-                  <img src="{{ product.metafields["global"]["Lifestyle-Image-2"] }} alt="{{ product.metafields["global"]["Lifestyle-Image-2-Alt"] }}"/>
-              </div>
-     		{% endif %}
-            {% if product.metafields["global"]["Lifestyle-Image-3"] %}
-              <div class="one-half column omega gallery-images">
-                  <img src="{{ product.metafields["global"]["Lifestyle-Image-3"] }} alt="{{ product.metafields["global"]["Lifestyle-Image-3-Alt"] }}"/>
-              </div>
-     		{% endif %}
-           	{% if product.metafields["global"]["Lifestyle-Image-4"] %}
-              <div class="sixteen columns gallery-images last">
-                  <img src="{{ product.metafields["global"]["Lifestyle-Image-4"] }} alt="{{ product.metafields["global"]["Lifestyle-Image-4-Alt"] }}"/>
-              </div>
-     		{% endif %}
-        </div>{% endif %}
-        {% if product.metafields["global"]["Layout"] == "layout-2" %}
-        <div class="row {{ product.metafields["global"]["Layout"] }}">
-    		{% if product.metafields["global"]["Lifestyle-Image-1"] %}
-              <div class="sixteen columns gallery-images">
-                  <img src="{{ product.metafields["global"]["Lifestyle-Image-1"] }} alt="{{ product.metafields["global"]["Lifestyle-Image-1-Alt"] }}"/>
-              </div>
-     		{% endif %}
-            {% if product.metafields["global"]["Lifestyle-Image-2"] %}
-              <div class="one-half column alpha gallery-images">
-                  <img src="{{ product.metafields["global"]["Lifestyle-Image-2"] }} alt="{{ product.metafields["global"]["Lifestyle-Image-2-Alt"] }}"/>
-              </div>
-     		{% endif %}
-            {% if product.metafields["global"]["Lifestyle-Image-3"] %}
-              <div class="one-half column omega gallery-images first">
-                  <img src="{{ product.metafields["global"]["Lifestyle-Image-3"] }} alt="{{ product.metafields["global"]["Lifestyle-Image-3-Alt"] }}"/><br/>
-                {% if product.metafields["global"]["Lifestyle-Image-4"] %}
-                  <img src="{{ product.metafields["global"]["Lifestyle-Image-4"] }}" alt="{{ product.metafields["global"]["Lifestyle-Image-4-Alt"] }}"/>
-     		{% endif %}
-              </div>
-     		{% endif %}
+      <div class="container main content main-wrapper" id="product-new-g1">
 
-        </div>{% endif %}
-      	{% if product.metafields["global"]["Feature-1-text"] %}
-        <div class="row three-feature">
-        	<div class="one-third column alpha center extra-feature">
-                <img src="{{ product.metafields["global"]["Feature-1-image"] }}"/><br/>
-                {{ product.metafields["global"]["Feature-1-text"] }}
-            </div>
-            <div class="one-third column center extra-feature vika-middle">
-                <img src="{{ product.metafields["global"]["Feature-2-image"] }}"/><br/>
-                {{ product.metafields["global"]["Feature-2-text"] }}
-            </div>
-            <div class="one-third column omega center extra-feature">
-                <img src="{{ product.metafields["global"]["Feature-3-image"] }}"/><br/>
-                {{ product.metafields["global"]["Feature-3-text"] }}
-            </div>
-        </div>
+        {% comment %} Render Header Above Slider {% endcomment %}
+        {% if product.metafields["global"]["Header"]%}
+          <div class="slider-header">
+            <h1>{{ product.metafields["global"]["Header"] }}</h1>
+          </div>
         {% endif %}
+
+        {% comment %} FlexSlider {% endcomment %}
+        {% capture sliderImages %}
+          {{ product.metafields["global"]["Lifestyle-Image-1"] }},
+          {{ product.metafields["global"]["Lifestyle-Image-2"] }},
+          {{ product.metafields["global"]["Lifestyle-Image-3"] }}
+        {% endcapture %}
+        {% assign sliderImages = sliderImages | split: ',' %}
+
+        <div class="flexslider product_gallery product-lifestyle-gallery
+          {% if product-images == blank %}product_slider{% endif %}">
+          <ul class="slides">
+            {% for image in sliderImages %}
+              <li data-thumb="{{ image }}">
+                <a href="{{ image }}" class="fancybox" title="{{ image.alt | escape }}">
+                  <div class="image__container" style="max-width: 100%;" >
+                    <img src="{{ image }}" />
+                  </div>
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </div>
+
+        {% comment %} custom object metafield loop  {% endcomment %}
+
+
+        {% comment %} Render Sub-Header Under Slider {% endcomment %}
+        {% if product.metafields["global"]["Subheader"]%}
+          <div class="slider-subheader">
+            <h2>{{ product.metafields["global"]["Subheader"] }}</h2>
+            {% if product.metafields["global"]["Description"] %}
+              <div class="description">
+                {{ product.metafields["global"]["Description"] }}
+              </div>
+            {% endif %}
+          </div>
+        {% endif %}
+
+        {% comment %} Stacked Images Code {% endcomment %}
+        {% if product.metafields["global"]["Product-feature-1-image"] %}
+          <div class="stacked-features">
+            <div class="feature">
+              <img src="{{ product.metafields["global"]["Product-feature-1-image"] }}" />
+              <div class="info">
+                <h1>{{ product.metafields["global"]["Product-feature-1-title"] }}</h1>
+                <p>{{ product.metafields["global"]["Product-feature-1-description"] }}</p>
+              </div>
+            </div>
+            <div class="feature">
+              <img src="{{ product.metafields["global"]["Product-feature-2-image"] }}" />
+              <div class="info">
+                <h1>{{ product.metafields["global"]["Product-feature-2-title"] }}</h1>
+                <p>{{ product.metafields["global"]["Product-feature-2-description"] }}</p>
+              </div>
+            </div>
+            <div class="feature">
+              <img src="{{ product.metafields["global"]["Product-feature-3-image"] }}" />
+              <div class="info">
+                <h1>{{ product.metafields["global"]["Product-feature-3-title"] }}</h1>
+                <p>{{ product.metafields["global"]["Product-feature-3-description"] }}</p>
+              </div>
+            </div>
+          </div>
+        {% endif %}
+
+        {% comment %} 3 Features Images (Horizontal) {% endcomment %}
+        {% if product.metafields["global"]["Feature-4-image"] %}
+          <div id="feature-row">
+            <div class="one-third column alpha center">
+                  <img src="{{ product.metafields["global"]["Feature-4-image"] }}"/><br/>
+                  <p class="feature-txt">{{ product.metafields["global"]["Feature-4-text"] }}</p>
+              </div>
+              <div class="one-third column center">
+                  <img src="{{ product.metafields["global"]["Feature-5-image"] }}"/><br/>
+                  <p class="feature-txt">{{ product.metafields["global"]["Feature-5-text"] }}</p>
+              </div>
+              <div class="one-third column omega center">
+                  <img src="{{ product.metafields["global"]["Feature-6-image"] }}"/><br/>
+                  <p class="feature-txt">{{ product.metafields["global"]["Feature-6-text"] }}</p>
+              </div>
+          </div>
+        {% endif %}
+
+
     <div class="row product-specs">
 
       <div class="eight columns alpha product-specs-left">
