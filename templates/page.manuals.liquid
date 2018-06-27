@@ -1,0 +1,86 @@
+<div class="container main content main-wrapper">
+  <div class="sixteen columns page clearfix">
+    <h1 class="center">
+      {{ page.title }}
+    </h1>
+    <h2 class="center">Bikes</h2>
+    {% assign products = collections.bikes.products | sort: 'title' %}
+	{% for product in products %}
+		 {% if product.metafields["global"]["Product-Manual"] %}
+		<div class="four columns center {% cycle products: '', '', '', "last" %}">
+         
+            <a target="_blank" href="{{ product.metafields["global"]["Product-Manual"] }}"><img src="{{ product.featured_image | product_img_url: 'large' }}">
+          {{ product.title }}<br/><span class="manual-dl">Download Manual</span></a>
+         {% comment %} <hr class="manuals">
+          <a target="_blank" class="manuals" href="{{ product.url }}">View Product</a>{% endcomment %}
+    	</div>{% endif %}
+
+    {% endfor %}
+  </div>
+  <div class="clear"></div> 
+  <div class="feature_divider"></div>
+  <div class="sixteen columns page clearfix">
+    <h2 class="center">Scooters</h2>
+      {% assign products = collections.scooters.products | sort: 'title' %}
+      {% for product in products %}
+ {% if product.metafields["global"]["Product-Manual"] %}
+          <div class="four columns center {% cycle products: '', '', '', "last" %}">
+              <a target="_blank" href="{{ product.metafields["global"]["Product-Manual"] }}"><img src="{{ product.featured_image | product_img_url: 'large' }}">
+              {{ product.title }}<br/><span class="manual-dl">Download Manual</span></a>
+          </div>{% endif %}
+
+      {% endfor %}
+    </div>
+    <div class="sixteen columns page clearfix">
+	<h2 class="center">Hoverboards</h2>
+      {% assign products = collections.hoverboards.products | sort: 'title' %}
+      {% for product in products %}
+ {% if product.metafields["global"]["Product-Manual"] %}
+          <div class="four columns center {% cycle products: '', '', '', "last" %}">
+              <a target="_blank" href="{{ product.metafields["global"]["Product-Manual"] }}"><img src="{{ product.featured_image | product_img_url: 'large' }}">
+              {{ product.title }}<br/><span class="manual-dl">Download Manual</span></a>
+          </div>{% endif %}
+
+      {% endfor %}
+    </div>
+   <div class="sixteen columns page clearfix">
+	<h2 class="center">JetKarts</h2>
+      {% assign products = collections.jetkarts.products | sort: 'title' %}
+      {% for product in products %}
+ {% if product.metafields["global"]["Product-Manual"] %}
+          <div class="four columns center {% cycle products: '', '', '', "last" %}">
+              <a target="_blank" href="{{ product.metafields["global"]["Product-Manual"] }}"><img src="{{ product.featured_image | product_img_url: 'large' }}">
+              {{ product.title }}<br/><span class="manual-dl">Download Manual</span></a>
+          </div>{% endif %}
+
+      {% endfor %}
+    </div>
+	<div class="sixteen columns page clearfix">
+	<h2 class="center">E-Boards</h2>
+      {% assign products = collections.electric-boards.products | sort: 'title' %}
+      {% for product in products %}
+ {% if product.metafields["global"]["Product-Manual"] %}
+          <div class="four columns center {% cycle products: '', '', '', "last" %}">
+             <a target="_blank" href="{{ product.metafields["global"]["Product-Manual"] }}"> <img src="{{ product.featured_image | product_img_url: 'large' }}">
+              {{ product.title }}<br/><span class="manual-dl">Download Manual</span></a>
+          </div>{% endif %}
+
+      {% endfor %}
+    </div>
+   <div class="sixteen columns page clearfix">
+	<h2 class="center">Kids</h2>
+      {% assign products = collections.kids.products | sort: 'title' %}
+      {% for product in products %}
+ {% if product.metafields["global"]["Product-Manual"] %}
+          <div class="four columns center {% cycle products: '', '', '', "last" %}">
+             <a target="_blank" href="{{ product.metafields["global"]["Product-Manual"] }}"> <img src="{{ product.featured_image | product_img_url: 'large' }}">
+              {{ product.title }}<br/><span class="manual-dl">Download Manual</span></a>
+          </div>{% endif %}
+
+      {% endfor %}
+    </div>
+  
+   
+</div>
+
+
