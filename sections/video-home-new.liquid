@@ -1,0 +1,84 @@
+<section id="landing-page-video">
+  <div class="video-hero">
+    <iframe id="vid" src="https://player.vimeo.com/video/272873533?background=1&muted=1?rel=0&amp;" allow="autoplay" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
+</section>
+
+{% schema %}
+  {
+    "name": "New Landing Video",
+    "settings": [
+      {
+        "type": "header",
+        "content": "Video"
+      },
+      {
+        "type": "select",
+        "id": "source",
+        "label": "Video source",
+        "options": [
+          {
+            "value": "youtube",
+            "label": "YouTube"
+          },
+          {
+            "value": "vimeo",
+            "label": "Vimeo"
+          },
+          {
+            "value": "html5",
+            "label": "HTML5"
+          }
+        ],
+        "default": "vimeo"
+      },
+      {
+        "type": "checkbox",
+        "id": "autoplay",
+        "label": "Autoplay video",
+        "default": true
+      },
+      {
+        "type": "checkbox",
+        "id": "autoloop",
+        "label": "Autoloop video",
+        "default": true
+      },
+      {
+        "type": "video_url",
+        "id": "video",
+        "label": "Video URL to use",
+        "accept": ["youtube", "vimeo"],
+        "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
+      },
+      {
+        "type": "header",
+        "content": "Hero Heading"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "Title",
+        "default": "New Landing Video"
+      }
+    ],
+    "presets": [{
+      "name": "New Landing Video",
+      "category": "Video",
+      "settings": {
+        "autoplay": true,
+        "video": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "source": "youtube"
+      }
+    }]
+  }
+{% endschema %}
+
+{% stylesheet %}
+
+  padding: 0 !important!
+
+{% endstylesheet %}
+
+{% javascript %}
+{% endjavascript %}

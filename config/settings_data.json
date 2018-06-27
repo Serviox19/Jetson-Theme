@@ -2513,6 +2513,7 @@
       },
       "1482978157864": {
         "type": "image-with-text-overlay-section",
+        "disabled": true,
         "settings": {
           "image": "",
           "headline_animation": "",
@@ -2691,6 +2692,7 @@
       },
       "1515770504003": {
         "type": "image-with-text-overlay-section",
+        "disabled": true,
         "settings": {
           "image": "",
           "headline_animation": "",
@@ -2916,9 +2918,35 @@
           "product_height": 500,
           "toggle": false
         }
+      },
+      "1530021499914": {
+        "type": "video",
+        "settings": {
+          "source": "vimeo",
+          "aspect_ratio": "16:9",
+          "autoplay": true,
+          "autoloop": true,
+          "video_dark_overlay": false,
+          "video": "https:\/\/player.vimeo.com\/video\/272873533",
+          "mp4": "",
+          "ogv": "",
+          "headline_animation": "animate_down",
+          "display_text_over_video": false,
+          "title": "Your headline here",
+          "subtitle": "<p>This is a short subheading for your banner image<\/p>",
+          "text_position": "center",
+          "text_alignment": "center",
+          "button_label": "Play Video",
+          "link": "",
+          "homepage_arrow": false,
+          "image": "",
+          "parallax_effect": true,
+          "parallax_image_height": 600
+        }
       }
     },
     "content_for_index": [
+      "1530021499914",
       "1482978157864",
       "1515770504003",
       "1517934984503",
