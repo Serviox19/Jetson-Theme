@@ -5931,49 +5931,70 @@ h2.gallery-header span {background:none;color:#ffffff;padding:15px 50px;font-siz
 /* ================================================== */
 
 
-.banner-wrapper {
-  width:100vw;
-  position:relative;
-  height: auto;
-
-  #mobile_banner {
-    display: none;
-    height: auto;
-    width: 100%;
-  }
-
-  #desktop_banner {
-    display: none;
-    height: auto;
-    width: 100%;
-  }
-
-  #tablet-banner {
-    display: none;
-    height: auto;
-    width: 100%;
-  }
-}
-
-
-/* #Collections Banner switch
+/* Collection HeaderImage (Product of the Week)
 ================================================== */
 
-@media only screen and (max-width: 767px) {
-  /* show mobile banner */
-  #mobile_banner { display: block !important }
+#shopify-section-collection-headerimage {
+
+  .header-banner {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: auto;
+
+    #mobile-banner {
+      display: none;
+      height: auto;
+      max-height: 400px;
+      width: 100%;
+      object-fit: fill;
+    }
+
+    #desktop-banner {
+      display: none;
+      height: auto;
+      max-height: 350px;
+      width: 100%;
+      object-fit: fill;
+    }
+
+    #tablet-banner {
+      display: none;
+      height: auto;
+      max-height: 300px;
+      width: 100%;
+      object-fit: fill;
+    }
+  }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+/* ########## Banner Switch ######### */
+
+@media only screen and (max-width: 600px) {
+  /* show mobile banner */
+  #mobile-banner { display: block !important; }
+}
+
+@media only screen and (min-width: 768px) {
+
+  /* Remove extra space */
+  #shopify-section-collection-headerimage .header-banner {
+    margin-bottom: -70px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
   /* show tablet banner */
-  #tablet-banner { display: block !important }
+  #tablet-banner { display: block !important; padding-top: 0.7em;}
 }
 
 @media only screen and (min-width: 1025px) {
   /* show desktop banner */
-  #desktop_banner { display: block !important }
+  #desktop-banner { display: block !important; padding-top: 3em; }
 }
+
 /* ================================================== */
+
 
 
 /* #Responsie Header Fix!
@@ -6644,7 +6665,5 @@ h2.gallery-header span {background:none;color:#ffffff;padding:15px 50px;font-siz
 
     .flex-direction-nav .flex-next, .fancybox-next span { right: 2px !important }
   }
-
-  @media only screen and (max-width: 768px) {}
 
 /* ================================================== */

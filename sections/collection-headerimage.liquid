@@ -53,6 +53,12 @@
   </div>
 {% endif %}
 
+<div class="header-banner">
+  <img id="desktop-banner" src="{{ collection.metafields["global"]["banner-desktop"] }}" />
+  <img id="tablet-banner" src="{{ collection.metafields["global"]["banner-tablet"] }}" />
+  <img id="mobile-banner" src="{{ collection.metafields["global"]["banner-mobile"] }}" />
+</div>
+
 <div class="container main content main-wrapper">
   {% paginate collection.products by section.settings.pagination_limit %}
 
