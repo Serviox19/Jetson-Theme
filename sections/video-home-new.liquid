@@ -1,6 +1,13 @@
 <section id="landing-page-video">
   <div class="video-hero">
-    <iframe id="vid" src="https://player.vimeo.com/video/272873533?background=1&muted=1?rel=0&amp;" allow="autoplay" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    {% assign videoSrc = section.settings.video %}
+    {% if section.settings.source == 'vimeo' %}
+      <iframe id="vid" src="{{ videoSrc }}?background=1&muted=1?rel=0&amp;" allow="autoplay" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    {% elsif section.settings.source == 'youtube' %}
+      {% comment %} fix youtube! {% endcomment %}
+      <iframe id="vid "src="{{ videoSrc }}?autoplay=1&mute=1&controls=0&showinfo=0&autohide=1" allow="autoplay" frameborder="0" height="100%" width="100%" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+    {% else %}
+    {% endif %}
   </div>
 </section>
 
@@ -47,7 +54,7 @@
       {
         "type": "video_url",
         "id": "video",
-        "label": "Video URL to use",
+        "label": "Video Url",
         "accept": ["youtube", "vimeo"],
         "default": "https://www.youtube.com/watch?v=_9VUPq3SxOc"
       },
