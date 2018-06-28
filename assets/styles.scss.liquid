@@ -5930,22 +5930,26 @@ h2.gallery-header span {background:none;color:#ffffff;padding:15px 50px;font-siz
 }
 /* ================================================== */
 
+
 .banner-wrapper {
   width:100vw;
   position:relative;
   height: auto;
 
   #mobile_banner {
+    display: none;
     height: auto;
     width: 100%;
   }
 
   #desktop_banner {
+    display: none;
     height: auto;
     width: 100%;
   }
 
-  #large-banner {
+  #tablet-banner {
+    display: none;
     height: auto;
     width: 100%;
   }
@@ -5954,39 +5958,20 @@ h2.gallery-header span {background:none;color:#ffffff;padding:15px 50px;font-siz
 
 /* #Collections Banner switch
 ================================================== */
-@media only screen and (min-width: 1301px) {
-  /* show large banner, and hide desktop and mobile_only */
-  #desktop_banner {display: none !important}
-  #mobile_banner {display: none !important}
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1300px) {
-  /* Show Desktop banner */
-  #mobile_banner {display: none !important}
-  #large-banner {display: none !important}
-}
 
 @media only screen and (max-width: 767px) {
-  /* Show mobile banner */
-  #desktop_banner {display: none !important}
-  #large-banner {display: none !important}
-  .products-wrapper {width: 300px !important;}
-}
-/* ================================================== */
-
-
-/* #Product of the week Loop fix
-================================================== */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-  .products-wrapper { width: 420px !important; }
+  /* show mobile banner */
+  #mobile_banner { display: block !important }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  .products-wrapper { width: 748px !important; }
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* show tablet banner */
+  #tablet-banner { display: block !important }
 }
 
-@media only screen and (min-width: 960px) and (max-width: 1199px) {
-  .products-wrapper { width: 940px !important; }
+@media only screen and (min-width: 1025px) {
+  /* show desktop banner */
+  #desktop_banner { display: block !important }
 }
 /* ================================================== */
 
