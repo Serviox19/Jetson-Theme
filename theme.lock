@@ -124,7 +124,7 @@ assets/sky-blue.png:
 assets/soldout.png:
   development: 2018-06-19T13:02:08-04:00   6a7697db19e17aae7568e216c2b365af
 assets/styles.scss.liquid:
-  development: 2018-06-27T15:11:02-04:00   b9b57289883de30589c0e8dc1f0dd096
+  development: 2018-06-28T11:30:09-04:00   25edbc114380a679c7d8ee729f233ceb
 assets/white-green.png:
   development: 2018-06-19T13:02:09-04:00   50d12e137eb802b880bc060114d73e73
 assets/white-red.png:
@@ -228,7 +228,7 @@ sections/social-feeds.liquid:
 sections/testimonial.liquid:
   development: 2018-06-19T13:02:03-04:00   a286cc44e2e12f61f010bd4b0ecc0bc4
 sections/video-home-new.liquid:
-  development: 2018-06-27T15:22:48-04:00   b8d85bbcea20511a17fee6b7201d4234
+  development: 2018-06-27T16:19:40-04:00   127f1ffcdf7c732aecff00c9cdcc1964
 sections/video.liquid:
   development: 2018-06-26T11:23:20-04:00   82fd09b280f1ec5a7cf31c3bc80117f7
 snippets/blog-sidebar.liquid:
