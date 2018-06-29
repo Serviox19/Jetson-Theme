@@ -6031,6 +6031,10 @@ h2.gallery-header span {background:none;color:#ffffff;padding:15px 50px;font-siz
 
 /* #New Product Page (G1)
 ================================================== */
+#content_wrapper {
+  overflow: hidden !important; /* to fix small issue on tablet */
+}
+
 #shopify-section-product-new-g1 {
   background-color: #f7f7f7;
 
@@ -6304,22 +6308,26 @@ h2.gallery-header span {background:none;color:#ffffff;padding:15px 50px;font-siz
   .product-specs {
 
     .product-specs-label {
-      line-height: 45px;
+      line-height: 20px;
     }
 
     .columns.omega {
-      line-height: 45px;
+      line-height: 20px;
       font-family: AvenirNext-Medium;
       font-size: 14px;
       font-weight: 500;
       font-style: normal;
       font-stretch: normal;
     }
-
-    .product-specs-hr {
-      margin: 12px 0 0 0 !important;
-    }
   }
+}
+
+#product-new-g1 > div.row.product-specs > div.eight.columns.alpha.product-specs-left > div {
+  margin-bottom: 10px;
+}
+
+#product-new-g1 > div.row.product-specs > div.eight.columns.omega > div {
+  margin-bottom: 10px;
 }
 
 /* ============ Media Queries ================= */
