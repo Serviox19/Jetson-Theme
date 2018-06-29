@@ -3017,7 +3017,7 @@ html.mm-bottom.mm-opened.mm-opening div.is-absolute {
     -webkit-transform:translateZ(0);
     -webkit-font-smoothing:antialiased;
     -moz-osx-font-smoothing: grayscale;
-    margin:8px 10px 5px 0;
+    margin:10px 10px 5px 0;
     position:relative;
   }
   .crossed-out { position:absolute; width:100%; height:100%; left:0; top:0; }
@@ -6047,25 +6047,22 @@ h2.gallery-header span {background:none;color:#ffffff;padding:15px 50px;font-siz
       color: #000;
       font-size: 35px;
       font-weight: 700;
-      margin-left: 3px;
+      display: inline-flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
     }
-  }
-
-
-  .ss-icon {
-    border-radius: 50%;
-    background-color: #FFFFFF;
-    box-shadow: 0 8px 12px -2px rgba(0,0,0,0.25);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
 
     .icon-circle-right {
       color: #000;
       font-size: 35px;
       font-weight: 700;
-      margin: 0 !important;
+      display: inline-flex;
+      width: 100%;
+      justify-content: center;
+      align-items: center;
+      margin: 0;
     }
   }
 
@@ -6139,25 +6136,22 @@ h2.gallery-header span {background:none;color:#ffffff;padding:15px 50px;font-siz
           color: #000;
           font-size: 35px;
           font-weight: 700;
-          margin-left: 3px;
+          display: inline-flex;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
         }
-      }
-
-
-      .ss-icon {
-        border-radius: 50%;
-        background-color: #FFFFFF;
-        box-shadow: 0 8px 12px -2px rgba(0,0,0,0.25);
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
 
         .icon-circle-right {
           color: #000;
           font-size: 35px;
           font-weight: 700;
-          margin: 0 !important;
+          display: inline-flex;
+          width: 100%;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
         }
       }
     }
@@ -6351,9 +6345,13 @@ h2.gallery-header span {background:none;color:#ffffff;padding:15px 50px;font-siz
 
   @media only screen and (max-width: 500px) {
     .swatch {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: initial;
 
       .option_title {
-        margin-right: 10px;
+        margin-right: 30px !important;
       }
     }
 
@@ -6574,7 +6572,7 @@ h2.gallery-header span {background:none;color:#ffffff;padding:15px 50px;font-siz
     }
   }
 
-  @media only screen and (min-width: 901px) and (max-width: 1300px) {
+  @media only screen and (min-width: 901px) {
 
     .slider-header {
       width: auto !important;
@@ -6648,7 +6646,6 @@ h2.gallery-header span {background:none;color:#ffffff;padding:15px 50px;font-siz
         }
       }
     }
-
   }
 
 /* ================================================== */
@@ -6660,13 +6657,17 @@ h2.gallery-header span {background:none;color:#ffffff;padding:15px 50px;font-siz
   .flexslider {
     overflow: inherit;
 
-    @media only screen and (max-width: 768px) {
-      .flex-direction-nav a, .fancybox-next span, .fancybox-prev span { opacity: 1 !important };
-    }
-
     .flex-direction-nav .flex-prev, .fancybox-prev span { left: 2px !important };
 
     .flex-direction-nav .flex-next, .fancybox-next span { right: 2px !important };
+
+    @media only screen and (max-width: 768px) {
+      .flex-direction-nav a, .fancybox-next span, .fancybox-prev span {
+        opacity: 1 !important;
+        width: 40px;
+        height: 40px;
+      };
+    }
   }
 
 /* ================================================== */
