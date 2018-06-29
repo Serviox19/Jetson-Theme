@@ -6166,6 +6166,7 @@ h2.gallery-header span {background:none;color:#ffffff;padding:15px 50px;font-siz
   .slider-subheader {
     text-align: center;
     margin: 54px auto 112px auto;
+    max-width: 600px;
 
     h2 {
       height: 45px;
@@ -6659,11 +6660,13 @@ h2.gallery-header span {background:none;color:#ffffff;padding:15px 50px;font-siz
   .flexslider {
     overflow: inherit;
 
-    .flex-direction-nav a, .fancybox-next span, .fancybox-prev span { opacity: 1 !important }
+    @media only screen and (max-width: 768px) {
+      .flex-direction-nav a, .fancybox-next span, .fancybox-prev span { opacity: 1 !important };
+    }
 
-    .flex-direction-nav .flex-prev, .fancybox-prev span { left: 2px !important }
+    .flex-direction-nav .flex-prev, .fancybox-prev span { left: 2px !important };
 
-    .flex-direction-nav .flex-next, .fancybox-next span { right: 2px !important }
+    .flex-direction-nav .flex-next, .fancybox-next span { right: 2px !important };
   }
 
 /* ================================================== */
